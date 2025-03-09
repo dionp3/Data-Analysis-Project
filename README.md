@@ -1,99 +1,111 @@
+Berikut versi yang lebih rapi dan terstruktur dari **README.md** untuk proyek **Analisis Penyewaan Sepeda**:
+
 ---
 
-# 🚲 Analisis Penyewaan Sepeda  
-📊 **Dashboard Interaktif dengan Streamlit**  
+# 🚲 **Analisis Penyewaan Sepeda**  
+📊 *Dashboard Interaktif dengan Streamlit*  
+
+---
 
 ## 📌 **Deskripsi Proyek**  
-Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan dataset yang tersedia. Dengan menggunakan **Python**, **Pandas**, **Seaborn**, dan **Streamlit**, dashboard ini menampilkan berbagai **analisis data visual** untuk membantu memahami faktor-faktor yang mempengaruhi penyewaan sepeda.
+Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan dataset yang tersedia. Dengan menggunakan **Python**, **Pandas**, **Seaborn**, dan **Streamlit**, dashboard ini menampilkan berbagai **analisis data visual** untuk memahami faktor-faktor yang mempengaruhi penyewaan sepeda.
 
 ---
 
 ## 🎯 **Fitur Dashboard**  
-1️⃣ **Pengaruh Hari Libur terhadap Penyewaan Sepeda**  
-   - Membandingkan rata-rata penyewaan sepeda pada hari biasa vs. hari libur.  
+
+✅ **1. Pengaruh Hari Libur terhadap Penyewaan Sepeda**  
+   - Membandingkan rata-rata penyewaan sepeda pada **hari biasa vs. hari libur**.  
    - Ditampilkan dalam bentuk **bar chart**.  
 
-2️⃣ **Pola Penyewaan Sepeda Sepanjang Hari**  
-   - Menunjukkan tren penyewaan berdasarkan jam dalam sehari.  
+✅ **2. Pola Penyewaan Sepeda Sepanjang Hari**  
+   - Menunjukkan tren penyewaan berdasarkan **jam dalam sehari**.  
    - Ditampilkan dalam **bar chart** untuk melihat jam-jam sibuk.  
 
-3️⃣ **Analisis RFM (Recency, Frequency, Monetary)**  
+✅ **3. Analisis RFM (Recency, Frequency, Monetary)**  
    - Menghitung **Recency (R)**, **Frequency (F)**, dan **Monetary (M)** berdasarkan data penyewaan.  
    - Ditampilkan dalam bentuk **histogram** untuk setiap metrik RFM.  
 
 ---
 
 ## 📂 **Struktur Proyek**  
-```
+```plaintext
 📁 Data Analysis Project  
-│── 📂 data/                   # Folder untuk dataset  
-│   ├── all_data.csv           # Dataset utama  
 │── 📂 dashboard/               # Folder untuk kode Streamlit  
-│   ├── dashboard.py           # Script utama Streamlit  
-│── 📜 README.md                # Dokumentasi proyek  
-│── 📜 requirements.txt         # Daftar dependensi Python  
+│   ├── dashboard.py            # Script utama Streamlit  
+│── 📂 data/                    # Folder untuk dataset  
+│   ├── all_data.csv            # Dataset utama  
+│   ├── day.csv                 # Dataset harian  
+│   ├── hour.csv                # Dataset per jam  
+│── 📜 Proyek Analisis Data.pynb # Notebook Jupyter untuk eksplorasi data  
+│── 📜 README.md                 # Dokumentasi proyek  
+│── 📜 requirements.txt          # Daftar dependensi Python  
 ```
 
 ---
 
 ## 🚀 **Cara Menjalankan Dashboard**  
-1️⃣ **Clone repository ini**  
-   ```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
-   ```
 
-2️⃣ **Install dependensi**  
-   ```bash
-   pip install pipenv
-   pipenv shell
-   pip install numpy pandas scipy matplotlib seaborn jupyter
-   pip install -r requirements.txt
-   ```
+### 1️⃣ **Clone Repository**  
+```bash
+git clone https://github.com/username/repo-name.git
+cd repo-name
+```
 
-3️⃣ **Jalankan Streamlit**  
-   ```bash
-   streamlit run dashboard/dashboard.py
-   ```
+### 2️⃣ **Buat Virtual Environment (Pipenv)**  
+```bash
+pip install pipenv
+pipenv shell
+```
 
-4️⃣ **Buka di browser**  
-   - **Local URL:** `http://localhost:8501`  
-   - **Network URL:** `http://your-ip:8501`  
+### 3️⃣ **Install Dependensi**  
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ **Jalankan Streamlit**  
+```bash
+streamlit run dashboard/dashboard.py
+```
+
+### 5️⃣ **Akses di Browser**  
+- **Local URL:** `http://localhost:8501`  
+- **Network URL:** `http://your-ip:8501`  
 
 ---
 
 ## 📊 **Hasil Visualisasi**  
-### 1️⃣ Pengaruh Hari Libur terhadap Penyewaan  
-📌 *Grafik ini menunjukkan perbedaan jumlah penyewaan pada hari biasa dan hari libur.*  
-![Holiday Effect](assets/holiday_effect.png)  
 
-### 2️⃣ Pola Penyewaan Sepanjang Hari  
-📌 *Menampilkan jam-jam tersibuk dalam penyewaan sepeda.*  
-![Hourly Rental](assets/hourly_rental.png)  
+### 📌 **1. Pengaruh Hari Libur terhadap Penyewaan**  
+💡 *Grafik ini menunjukkan perbedaan jumlah penyewaan pada hari biasa dan hari libur. Data menunjukkan bahwa penyewaan sepeda lebih banyak terjadi pada hari biasa dibandingkan hari libur.*  
 
-### 3️⃣ Analisis RFM  
-📌 *Menganalisis pelanggan berdasarkan seberapa sering dan banyak mereka menyewa sepeda.*  
-![RFM Analysis](assets/rfm_analysis.png)  
+### 📌 **2. Pola Penyewaan Sepanjang Hari**  
+💡 *Menampilkan jam-jam tersibuk dalam penyewaan sepeda. Dari grafik, kita dapat melihat pola peningkatan penyewaan pada jam sibuk, terutama pagi dan sore hari.*  
+
+### 📌 **3. Analisis RFM**  
+💡 *Menganalisis pelanggan berdasarkan seberapa sering dan banyak mereka menyewa sepeda. Recency menunjukkan seberapa baru transaksi terakhir dilakukan, Frequency mencerminkan seberapa sering penyewaan terjadi, dan Monetary menggambarkan total penyewaan per pelanggan.*  
 
 ---
 
-## 📌 **Tech Stack**  
-🔹 **Python** - Data processing & visualization  
-🔹 **Pandas** - Manipulasi data  
-🔹 **Seaborn & Matplotlib** - Visualisasi grafik  
-🔹 **Streamlit** - Membuat dashboard interaktif  
+## 🔧 **Tech Stack yang Digunakan**  
+
+| Teknologi  | Deskripsi |
+|------------|----------|
+| **Python** | Pemrosesan data & analisis |
+| **Pandas** | Manipulasi data |
+| **Seaborn & Matplotlib** | Visualisasi grafik |
+| **Streamlit** | Dashboard interaktif |
 
 ---
 
-## 🛠 **Kontributor**  
-👤 **Dion Prayoga**  
-📧 [Email](mailto:dion@example.com) | 🔗 [LinkedIn](https://linkedin.com/in/dionprayoga)  
+## 👤 **Kontributor**  
+🔹 **Dion Prayoga**  
 
 ---
 
-## ⭐ **Jika proyek ini bermanfaat, jangan lupa beri bintang!** ⭐  
-🔗 [GitHub Repository](https://github.com/username/repo-name)  
+## ⭐ **Dukung Proyek Ini!**  
+Jika proyek ini bermanfaat, **jangan lupa beri bintang di repository ini!** ⭐  
 
 ---
 
-### **🚀 Selamat menganalisis data dan membangun dashboard yang keren!** 🚀
+### 🚀 **Selamat menganalisis data!** 🚀
