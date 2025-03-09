@@ -1,5 +1,3 @@
-Berikut adalah contoh **`README.md`** untuk proyek analisis data penyewaan sepeda menggunakan **Streamlit**:
-
 ---
 
 # 🚲 Analisis Penyewaan Sepeda  
