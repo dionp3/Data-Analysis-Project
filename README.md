@@ -8,7 +8,7 @@ Berikut versi yang lebih rapi dan terstruktur dari **README.md** untuk proyek **
 ---
 
 ## 📌 **Deskripsi Proyek**  
-Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan dataset yang tersedia. Dengan menggunakan **Python**, **Pandas**, **Seaborn**, dan **Streamlit**, dashboard ini menampilkan berbagai **analisis data visual** untuk memahami faktor-faktor yang mempengaruhi penyewaan sepeda.
+Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan dataset yang digunakan berasal dari Bike Sharing Dataset. Dengan menggunakan **Python**, **Pandas**, **Seaborn**, dan **Streamlit**, dashboard ini menampilkan berbagai **analisis data visual** untuk memahami faktor-faktor yang mempengaruhi penyewaan sepeda.
 
 ---
 
